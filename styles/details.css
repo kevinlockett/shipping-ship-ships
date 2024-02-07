@@ -1,0 +1,60 @@
+#container {
+    padding: 1rem 2rem 2rem;
+    border: 3px solid black;
+}
+
+.title {
+    padding: 0;
+    margin: 0;
+}
+
+.title__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 95%;
+    margin: 0 auto;
+}
+
+.title img {
+    height: 10em;
+    margin-right: 2rem;
+}
+
+.title h1 {
+    align-items: flex-end;
+    font-size: 4em;
+    color: #001848;
+}
+
+.detail--column {
+    margin: 2rem;
+    border: 2px dotted #f0ffff;
+    background-color: #89b9e7;
+
+}
+
+.list h2, h3
+.assignments h2, h3 {
+    padding-left: 1rem;
+    color: #001848;
+}
+
+.assignments {
+    max-width: 40%;
+    margin: 0 auto;
+    padding: 1rem 5rem;
+}
+
+.details ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.details li {
+    background-color:#f0ffff;
+    padding: .5rem;
+    margin: 0 1rem .5rem 1rem;
+}
+
