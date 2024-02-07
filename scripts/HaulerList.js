@@ -33,6 +33,15 @@ document.addEventListener(
 
 export const HaulerList = () => {
     const haulers = getHaulers()
+    haulers.sort(function (a, b) {
+        if (a.name < b.name) {
+            return -1
+        }
+        if (a.name > b.name) {
+            return 1
+        }
+        return 0
+    })
 
     let haulersHTML = "<ul>"
 

@@ -54,6 +54,15 @@ document.addEventListener(
 
 export const DockList = () => {
     const docks = getDocks()
+    docks.sort(function (a, b) {
+        if (a.location < b.location) {
+            return -1
+        }
+        if (a.location > b.location) {
+            return 1
+        }
+        return 0
+    })
 
     let docksHTML = "<ul>"
 

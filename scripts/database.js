@@ -48,31 +48,31 @@ const database = {
     shippingShips: [{
         id: 1,
         name: "Global Discoverer",
-        haulerId: 1
+        haulerId: 2
     }, {
         id: 2,
         name: "Grey Heron",
-        haulerId: 2
+        haulerId: 1
     }, {
         id: 3,
         name: "Donna Paizon",
-        haulerId: 3
+        haulerId: 2
     }, {
         id: 4,
         name: "Queen Alice's Regrets",
-        haulerId: 4
+        haulerId: 3
     }, {
         id: 5,
         name: "Vassup",
-        haulerId: 5
+        haulerId: 4
     }, {
         id: 6,
         name: "Loosetantric",
-        haulerId: 6
+        haulerId: 5
     }, {
         id: 7,
         name: "Edward Fitzwilly",
-        haulerId: 7
+        haulerId: 6
     }, {
         id: 8,
         name: "Astoneya",
@@ -92,7 +92,7 @@ const database = {
     }, {
         id: 12,
         name: "Andrew Diarrhea",
-        haulerId: 3
+        haulerId: 5
     }, {
         id: 13,
         name: "Willy Gutslost",
@@ -112,7 +112,7 @@ const database = {
     }, {
         id: 17,
         name: "Jellyfilled",
-        haulerId: 4
+        haulerId: 5
     }, {
         id: 18,
         name: "Edwardo Bologna",

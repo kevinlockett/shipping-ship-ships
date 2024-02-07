@@ -9,7 +9,7 @@ document.addEventListener(
         if (itemClicked.dataset.type === "shippingShip") {
 
             // Get the haulerId value of the shipping ship clicked
-            const shippingShipId = itemClicked.dataset.id
+            const haulerId = itemClicked.dataset.haulerforeignkey
             
             // Define a default object for the found hauler
             let haulingShip = { name: "" }
@@ -19,7 +19,7 @@ document.addEventListener(
             for (haulingShip of haulers) {
    
                 // Does the haulerId foreign key match the id of the current hauler?
-                if (haulingShip.id === parseInt(shippingShipId)) {
+                if (haulingShip.id === parseInt(haulerId)) {
                 
                     // Reassign the value of `haulingShip` to the current hauler
                     haulingShip = haulingShip
@@ -34,7 +34,16 @@ document.addEventListener(
 
 export const ShipList = () => {
     const ships = getShips()
-
+    ships.sort(function (a, b) {
+        if (a.name < b.name) {
+            return -1
+        }
+        if (a.name > b.name) {
+            return 1
+        }
+        return 0
+    })
+    
     let shipsHTML = "<ul>"
 
     for (const ship of ships) {
