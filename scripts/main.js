@@ -12,16 +12,19 @@ const applicationHTML = `
         </section>
     </div>
     <article class="details">
+        <section class="details__title">
+            <h2>Shipping Ship Tracker</h2>
+        </section>
         <section class="detail--column list details__docks">
-            <h2>Docks</h2>
+            <h3>Docks</h3>
             ${DockList()}
         </section>
         <section class="detail--column list details__haulers">
-            <h2>Hauling Ships</h2>
+            <h3>Hauling Ships</h3>
             ${HaulerList()}
         </section>
         <section class="detail--column list details__ships">
-            <h2>Shipping Ships</h2>
+            <h3>Shipping Ships</h3>
             ${ShipList()}
         </section>
     </article>

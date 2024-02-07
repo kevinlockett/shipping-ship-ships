@@ -27,16 +27,30 @@
     color: #001848;
 }
 
+.details {
+    border: #001848 solid 2px;
+    background-color: #89b9e7;
+}
+
+.details__title {
+    margin-left: 2rem;
+}
+
+.details__title h2 {
+    color: #001848;
+    font-size: 2.5rem;
+}
+
 .detail--column {
     margin: 2rem;
     border: 2px dotted #f0ffff;
-    background-color: #89b9e7;
-
+    padding-bottom: 1rem;
 }
 
 .list h2, h3
 .assignments h2, h3 {
-    padding-left: 1rem;
+    padding-left: 1.25rem;
+    font-size: 1.75rem;
     color: #001848;
 }
 
