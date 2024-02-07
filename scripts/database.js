@@ -19,19 +19,19 @@ const database = {
     haulers: [{
         id: 1,
         name: "Blue Marlin",
-        dockId: 1
+        dockId: 2
     }, {
         id: 2,
         name: "Mauve Macrocephalus",
-        dockId: 2
+        dockId: 3
     }, {
         id: 3,
         name: "Bronze Bakunawa",
-        dockId: 2
+        dockId: 3
     }, {
         id: 4,
         name: "Crimson Kraken",
-        dockId: 3
+        dockId: 4
     }, {
         id: 5,
         name: "Lithium Leviathon",

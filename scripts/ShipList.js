@@ -38,7 +38,14 @@ export const ShipList = () => {
     let shipsHTML = "<ul>"
 
     for (const ship of ships) {
-        shipsHTML += `<li data-id="${ship.id}" data-name="${ship.name}" data-haulerForeignKey="${ship.haulerId}" data-type="shippingShip" >${ship.name}</li>`
+        shipsHTML += `
+            <li data-id="${ship.id}" 
+                data-name="${ship.name}" 
+                data-haulerForeignKey="${ship.haulerId}" 
+                data-type="shippingShip" >
+                ${ship.name}
+            </li>
+        `
     }
 
     shipsHTML += "</ul>"
